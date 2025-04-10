@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="public/output.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-navy text-white box-border">
+    <header class="sticky top-0 border-white border-2 rounded-md z-10 px-6 md:px-28 py-4 flex justify-between items-center bg-navy">
+        <a href="#" class="text-2xl font-semibold cursor-default">Portfolio</a>
+    
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="md:hidden cursor-pointer text-3xl">☰</label>
+
+        <nav class="hidden md:flex gap-6 md:gap-10 peer-checked:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full text-center text-lg md:text-left md:ml-[145px] lg:max-xl:ml-96 xl:max-2xl:ml-[600px] 2xl:ml-[750px] bg-navy">
+            <a class="block font-bold hover:text-blue-300 py-2 md:py-0" href="#c1" onclick="document.getElementById('menu-toggle').checked = false;">Home</a>
+            <a class="block font-bold hover:text-blue-300 py-2 md:py-0" href="#c2" onclick="document.getElementById('menu-toggle').checked = false;">About</a>
+            <a class="block font-bold hover:text-blue-300 py-2 md:py-0" href="#c3" onclick="document.getElementById('menu-toggle').checked = false;">Skills</a>
+            <a class="block font-bold hover:text-blue-300 py-2 md:py-0" href="#c4" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a>
+            <a class="block font-bold hover:text-blue-300 py-2 md:py-0" href="#c5" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a>
+        </nav>
+    </header>
+
+    <!--Home-->
+    <section class="h-auto bg-navy text-white lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] lg:pt-32 xl:pt-32 2xl:pt-32 pt-11" id="c1">
+        <div class="grid gap-10 lg:grid-cols-2 lg:mx-32 xl:mx-32 2xl:mx-32">
+            <div class="p-10 mx-auto">
+                <h3 class="text-3xl font-bold">Hi, Myself</h3>
+                <h1 class="text-5xl font-bold my-3">Bodireddy Naresh</h1>
+                <h2 class="text-3xl font-bold">And I'm a Fullstack Developer</h2>
+                <p class="text-sm my-3"></p>
+                <div class="flex gap-4 mb-5 text-blue-400">
+                    <a class="text-2xl border-2 p-1 border-blue-500 rounded-full hover:bg-blue-500 hover:text-black flex items-center justify-center w-10 h-10" href="https://www.linkedin.com/in/bodireddy-naresh-805612340" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="text-2xl border-2 p-1 border-blue-500 rounded-full hover:bg-blue-500 hover:text-black flex items-center justify-center w-10 h-10" href="https://github.com/naresh65723" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a class="text-2xl border-2 p-1 border-blue-500 rounded-full hover:bg-blue-500 hover:text-black flex items-center justify-center w-10 h-10" href="https://www.facebook.com/naresh.bodireddy.9" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="text-2xl border-2 p-1 border-blue-500 rounded-full hover:bg-blue-500 hover:text-black flex items-center justify-center w-10 h-10" href="https://www.instagram.com/_i_am_naresh___" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    
+                </div>
+                <a href="public/media/Naresh_fresher_cv.pdf" target="_blank" class="bg-blue-500 py-2 px-4 text-black rounded-full shadow-share hover:shadow-none mx-auto">Download CV</a>
+            </div>
+    
+            <img src="public/media/naresh - photo.jpg" alt="My photo" class="w-[300px] h-[300px] animate-bounce rounded-full hover:shadow-2xl hover:shadow-blue-950 mt-14 lg:mt-24 xl:mt-14 2xl:mt-14 mx-auto">
+        </div>
+    </section>
+
+    <!--about-->
+    <section class="h-auto bg-slate-900 text-center p-10 lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] lg:pt-32 xl:pt-32 2xl:pt-32 pt-16" id="c2">
+        <h1 class="text-5xl font-bold mb-12 lg:mb-20 xl:mb-20 2xl:mb-20">About <span class="text-blue-500">Me</span></h1>
+        <div class="lg:flex xl:flex 2xl:flex justify-between gap-28 lg:mx-32 xl:mx-32 2xl:mx-32">
+            <img src="public/media/photo.jpg" alt="My photo" class="rounded-3xl mx-auto lg:h-[370px] xl:h-[390px] 2xl:h-[400px]">
+            <div class="lg:mt-9 xl:mt-14 2xl:mt-16 mx-auto">
+                <h2 class="text-xl font-bold my-2">Fullstack  Developer</h2>
+                <p class="mb-7 text-justify">Hi, I'm Naresh, a passionate web developer with a foundation in HTML, CSS, JavaScript, and React.  
+                    I have a B.Tech in Electronics and Communication Engineering, and I'm eager to build user-friendly, responsive, and efficient web applications.  
+                    Check out my projects and feel free to connect!
+                    </p>
+                <div class="text-center mt-9">
+                    <a href="public/about.html" target="_blank"  class="bg-blue-500 py-2 px-4 text-black rounded-full shadow-share hover:shadow-none">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--skills-->
+    <section class="h-auto bg-navy lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] p-10 lg:pt-32 xl:pt-32 2xl:pt-32 pt-16" id="c3">
+        <h1 class="text-center font-bold text-5xl mb-12 lg:mb-20 xl:mb-20 2xl:mb-20">My <span class="text-blue-500">Skills</span></h1>
+        <div class="grid gap-20 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 mx-10 lg:mx-32 xl:mx-32 2xl:mx-32">
+            <div>
+                <div class="flex relative justify-between">
+                    <h3>HTML</h3>
+                    <span>90%</span>
+                    <div class="bg-white h-2 w-[100%] rounded-lg absolute my-6"></div>
+                    <div class="bg-blue-500 h-2 w-[90%] rounded-lg absolute my-6"></div>
+                </div>
+                <div class="flex relative justify-between mt-16">
+                    <h3>CSS</h3>
+                    <span>85%</span>
+                    <div class="bg-white h-2 w-[100%] rounded-lg absolute my-6"></div>
+                    <div class="bg-blue-500 h-2 w-[85%] rounded-lg absolute my-6"></div>
+                </div>
+                <div class="flex relative justify-between mt-16">
+                    <h3>MySQL</h3>
+                    <span>80%</span>
+                    <div class="bg-white h-2 w-[100%] rounded-lg absolute my-6"></div>
+                    <div class="bg-blue-500 h-2 w-[80%] rounded-lg absolute my-6"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex relative justify-between">
+                    <h3>TailwindCSS</h3>
+                    <span>90%</span>
+                    <div class="bg-white h-2 w-[100%] rounded-lg absolute my-6"></div>
+                    <div class="bg-blue-500 h-2 w-[90%] rounded-lg absolute my-6"></div>
+                </div>
+                <div class="flex relative justify-between mt-16">
+                    <h3>JavaScript</h3>
+                    <span>80%</span>
+                    <div class="bg-white h-2 w-[100%] rounded-lg absolute my-6"></div>
+                    <div class="bg-blue-500 h-2 w-[90%] rounded-lg absolute my-6"></div>
+                </div>
+                <div class="flex relative justify-between mt-16">
+                    <h3>Python</h3>
+                    <span>80%</span>
+                    <div class="bg-white h-2 w-[100%] rounded-lg absolute my-6"></div>
+                    <div class="bg-blue-500 h-2 w-[90%] rounded-lg absolute my-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--project-->
+    <section class="h-auto bg-slate-900 text-center p-10 lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] lg:pt-32 xl:pt-32 2xl:pt-32 pt-16" id="c4">
+        <h1 class="text-center font-bold text-5xl mb-16">My <span class="text-blue-500">Project</span></h1>
+        <div class="lg:flex xl:flex 2xl:flex justify-between gap-20 lg:mx-32 xl:mx-32 2xl:mx-32">
+            
+            <img src="public/media/Priject - image.webp" alt="IoT-based plant growth monitoring system" class="h-[400px] mx-auto rounded-lg lg:h-[370px] xl:h-[390px] 2xl:h-[400px] lg:w-[500px] xl:w-[500px] 2xl:w-[600px]">
+            
+            <div class="mt-2 xl:mt-16 2xl:mt-20">
+                <h1 class="text-2xl lg:max-xl:text-xl text-blue-300">Plant Growth Monitoring and Automation Using IoT Platform</h1>
+                <p class="mb-5 mt-2 lg:max-xl:mt-1 text-justify">The Plant Growth Monitoring and Automation Using IoT project enhances agricultural efficiency.It uses IoT sensors for real-time monitoring and automation.Data-driven insights optimize plant growth conditions.This ensures better resource utilization and higher yields.</p>
+                <div class="text-center mt-8">
+                    <a href="public/project.html" target="_blank" class="bg-blue-500 py-2 px-4 text-black rounded-full shadow-share hover:shadow-none">Read more</a>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <!--contact-->
+    <section class="h-auto bg-navy text-center p-10 lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] lg:pt-32 xl:pt-32 2xl:pt-32 pt-16" id="c5">
+        <h1 class="text-5xl text-center font-bold mb-16">Contact <span class="text-blue-500">Me</span></h1>
+        <h1 class="text-3xl mx-auto"><i class="fa-solid fa-envelope"></i><a href="mailto:bodireddynaresh65@gmail.com" class="sm:mx-9 md:mx-9 lg:mx-9 xl:mx-9 2xl:mx-9">bodireddynaresh65@gmail.com</a></h1>
+        <h1 class="my-5 text-3xl mx-auto"><i class="fa-solid fa-phone"></i><a href="tel:+919177701265" class="mx-9">9177701265</a></h1>
+        <h1 class="text-3xl mx-auto"><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/bodireddy-naresh-805612340" target="_blank" class="mx-9">LinkedIn</a></h1>
+        <h1 class="my-5 text-3xl mx-auto"><i class="fa-brands fa-github"></i><a href="https://github.com/naresh65723" target="_blank" class="mx-9">Github</a></h1>   
+    </section>
+    <footer>
+        <div class="h-[70px] border-2 border-white px-28 py-[24px] text-end rounded-md">
+            <a href="" class="border-2 border-white p-3 rounded-md bg-white text-slate-900"><i class="fa-solid fa-angle-up"></i></a>
+
+        </div>
+    </footer>
+</body>
+</html>
